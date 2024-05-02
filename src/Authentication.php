@@ -12,7 +12,7 @@ use Illuminate\Foundation\Testing\TestCase;
  *
  * @return TestCase
  */
-function actingAs(Authenticatable $user, ?string $driver = null)
+function actingAs(Authenticatable $user, ?string $guard = null)
 {
     return test()->actingAs(...func_get_args());
 }
@@ -22,7 +22,7 @@ function actingAs(Authenticatable $user, ?string $driver = null)
  *
  * @return TestCase
  */
-function be(Authenticatable $user, ?string $driver = null)
+function be(Authenticatable $user, ?string $guard = null)
 {
     return test()->be(...func_get_args());
 }
